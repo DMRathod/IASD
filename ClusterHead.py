@@ -1,3 +1,4 @@
+import time
 from collections import defaultdict
 import pickle
 import random
@@ -143,6 +144,7 @@ def assign_weights_to_edges(weights_of_connecting_point, fresh=True):
 
 
 def get_list_of_clusters(graph, source, destination):
+    time.sleep(2)
     s_exist = False
     d_exist = False
 
@@ -304,6 +306,7 @@ class ClusterHead:
         # RM.get_list_of_clusters(service_type, source, destination)
 
     def service_response(self, service_type, cluster_graph, p_source, p_destination, intent):
+        time.sleep(0.05)
         c_source, c_destination, p_source, p_destination = ClusterHead.validate_service_request(service_type, p_source, p_destination)
         # print("idhar ", c_source, c_destination, p_source, p_destination)
         # sys.exit("Here i am")
@@ -346,7 +349,7 @@ class ClusterHead:
         # path = self.compute_shortest_path_heuristic()
         # return
         sp.compute_shortest_heuristic_path_with_intent(connecting_point_graph, p_source, p_destination, intent)
-
+        time.sleep(0.03)
 
 
 

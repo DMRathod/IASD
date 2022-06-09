@@ -1,4 +1,5 @@
 import Node
+import time
 import networkx as nx
 import Fog as fg
 import ClusterHead
@@ -12,7 +13,7 @@ import Assignment_of_nodes as An
 
 if __name__ == '__main__':
     source_coordinates = (11, 59)
-    destination_coordinates = (114, 5)
+    destination_coordinates = (12, 45)
 
     # Config1 = CG.Create_clusters()
     # point_graph = CP.CreateConnectingPoint()
@@ -88,13 +89,19 @@ if __name__ == '__main__':
     # intent = 1 for fuel station,
     # intent = 2 for restaurant
     print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--First Case--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-
+    start_time = time.time()
     list_of_all_nodes[0].service_request(cluster_graph, source_coordinates, destination_coordinates, intent=1)
+    total_time = (time.time() - start_time)
+    print("--- %s milli-seconds taken to execute ---" % (total_time))
+    print()
 
     print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Second Case--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
 
-    list_of_all_nodes[0].service_request(cluster_graph, source_coordinates, destination_coordinates, intent=1)
-
+    start_time = time.time()
+    list_of_all_nodes[0].service_request(cluster_graph, source_coordinates, destination_coordinates, intent=2)
+    total_time = (time.time() - start_time)
+    print("--- %s milli-seconds taken to execute ---" % (total_time))
+    print()
 
     # print(graph)
     # print(graph.keys())
