@@ -1,19 +1,9 @@
-import Node
 import time
-import networkx as nx
-import Fog as fg
-import ClusterHead
 import Initialize
-# import CreateConnectedClusterHeads as CG
-# import CreateConnectingPoints as CP
-# import ClusterHead as CH
-import matplotlib.pyplot as plt
-import CreateLattice as Cl
-import Assignment_of_nodes as An
 
 if __name__ == '__main__':
     source_coordinates = (11, 59)
-    destination_coordinates = (12, 45)
+    destination_coordinates = (39, 41)
 
     # Config1 = CG.Create_clusters()
     # point_graph = CP.CreateConnectingPoint()
@@ -88,20 +78,32 @@ if __name__ == '__main__':
     # request with source, destination and intent where we have consider
     # intent = 1 for fuel station,
     # intent = 2 for restaurant
-    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--First Case--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Simulation Initiated--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+
+    print('''GIVE INPUT FROM FOLLOWING SET \n \t \t \t \t { (11, 59, 'a'), (12, 45, 'b'), (39, 41, 'c',), (50, 58, 'd',), 
+                (70, 60, 'e', 1), (69, 39, 'f',), (55, 31, 'g', 1), (43, 20, 'h', 1)
+                (25, 18, 'i', 2), (45, 5, 'j'), (71, 20, 'k', ), (88, 30, 'l', )
+                (90, 10, 'm',), (84, 40, 'n', 3), (102, 20, 'o'), (114, 5, 'p')
+                (95, 0, 'q'), (102, 32, 'r', 2), (27, 2, 's', 1), (5, 20, 't')} ''')
+
     start_time = time.time()
+    print("Source : A = ", source_coordinates,"Destination : C = ", destination_coordinates)
+    list_of_all_nodes[0].service_request(cluster_graph, source_coordinates, destination_coordinates, intent=2)
+    total_time = (time.time() - start_time)
+    print("--- %s milli-seconds taken to execute ---" % (total_time))
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Simulation Completed--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+
+
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Second Simulation--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+
+    start_time = time.time()
+    print("Source : A = ", source_coordinates, "Destination : C = ", destination_coordinates)
     list_of_all_nodes[0].service_request(cluster_graph, source_coordinates, destination_coordinates, intent=1)
     total_time = (time.time() - start_time)
     print("--- %s milli-seconds taken to execute ---" % (total_time))
     print()
+    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Simulation Completed--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
 
-    print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Second Case--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
-
-    start_time = time.time()
-    list_of_all_nodes[0].service_request(cluster_graph, source_coordinates, destination_coordinates, intent=2)
-    total_time = (time.time() - start_time)
-    print("--- %s milli-seconds taken to execute ---" % (total_time))
-    print()
 
     # print(graph)
     # print(graph.keys())

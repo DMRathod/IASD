@@ -8,7 +8,7 @@ import Response_module as ResM
 import numpy as np
 
 # import shortest_path
-import shortest_path as sp
+import HeuristicPath as sp
 import CreateConnectingPoints as CP
 import createlatticeee as cgl
 
