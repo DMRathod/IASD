@@ -1,0 +1,205 @@
+Physical Connecting point
+a =>bd
+b =>adct
+d =>abcefn
+c =>bdig
+t =>bi
+i =>tchs
+h =>isjgk
+s =>ihj
+j =>hs
+g =>hcfk
+f =>gnld
+k =>ghlm
+n =>frde
+l =>fkrm
+r =>lon
+m =>kolpq
+o =>mrp
+p =>mqo
+q =>mp
+e =>dn
+Connecting point from cluster C1 are a b c d 
+Connecting point from cluster C2 are d e f n 
+Connecting point from cluster C3 are b c i t 
+Connecting point from cluster C4 are h i j s 
+Connecting point from cluster C5 are c f g h k 
+Connecting point from cluster C6 are f k l m n o r 
+Connecting point from cluster C7 are m o p q 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Simulation Initiated--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Source : A =  (11, 59) Destination : C =  (39, 41)
+Source Found
+data Conetxt new one: [[{'d1'}]]
+CGL in CHECK defaultdict(<class 'set'>, {})
+data context =  [[{'d1'}]] For Cluster  C1
+[] :::: []
+['d1'] :::: ['']
+weights of edges of connecting points
+a =>2.5 3.5 
+b =>2.5 3.0 2.0 0 
+d =>3.5 3.0 3.0 0 0 0 
+c =>2.0 3.0 0 0 
+t =>0 0 
+i =>0 0 0 0 
+h =>0 0 0 0 0 
+s =>0 0 0 
+j =>0 0 
+g =>0 0 0 0 
+f =>0 0 0 0 
+k =>0 0 0 0 
+n =>0 0 0 0 
+l =>0 0 0 0 
+r =>0 0 0 
+m =>0 0 0 0 0 
+o =>0 0 0 
+p =>0 0 0 
+q =>0 0 
+e =>0 0 
+Updated CGL False defaultdict(<class 'set'>, {frozenset(): set(), frozenset({'d1'}): {frozenset()}})
+data Conetxt new one: [[{'d1'}]]
+CGL in CHECK defaultdict(<class 'set'>, {})
+data context =  [[{'d1'}]] For Cluster  C3
+[] :::: []
+['d1'] :::: ['']
+weights of edges of connecting points
+a =>2.5 3.5 
+b =>2.5 3.0 2.25 3.0 
+d =>3.5 3.0 3.0 0 0 0 
+c =>2.25 3.0 2.5 0 
+t =>3.0 3.0 
+i =>3.0 2.5 0 0 
+h =>0 0 0 0 0 
+s =>0 0 0 
+j =>0 0 
+g =>0 0 0 0 
+f =>0 0 0 0 
+k =>0 0 0 0 
+n =>0 0 0 0 
+l =>0 0 0 0 
+r =>0 0 0 
+m =>0 0 0 0 0 
+o =>0 0 0 
+p =>0 0 0 
+q =>0 0 
+e =>0 0 
+Updated CGL False defaultdict(<class 'set'>, {frozenset(): set(), frozenset({'d1'}): {frozenset()}})
+data Conetxt new one: [[{'d1'}]]
+CGL in CHECK defaultdict(<class 'set'>, {})
+data context =  [[{'d1'}]] For Cluster  C5
+[] :::: []
+['d1'] :::: ['']
+weights of edges of connecting points
+a =>2.5 3.5 
+b =>2.5 3.0 2.25 3.0 
+d =>3.5 3.0 3.0 0 0 0 
+c =>2.25 3.0 2.5 3.0 
+t =>3.0 3.0 
+i =>3.0 2.5 0 0 
+h =>0 0 0 3.0 3.0 
+s =>0 0 0 
+j =>0 0 
+g =>3.0 3.0 2.5 3.0 
+f =>2.5 0 0 0 
+k =>3.0 3.0 0 0 
+n =>0 0 0 0 
+l =>0 0 0 0 
+r =>0 0 0 
+m =>0 0 0 0 0 
+o =>0 0 0 
+p =>0 0 0 
+q =>0 0 
+e =>0 0 
+Updated CGL False defaultdict(<class 'set'>, {frozenset(): set(), frozenset({'d1'}): {frozenset()}})
+Points with intent :  
+Intent aware path does not exist within the range hence context-aware path is as below :
+Path :  a -> b -> c
+Heuristic_cost :  4.75
+--- 2.0902905464172363 milli-seconds taken to execute ---
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Simulation Completed--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Second Simulation--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Source : A =  (11, 59) Destination : C =  (39, 41)
+Source Found
+data Conetxt new one: [[{'d1'}]]
+CGL in CHECK defaultdict(<class 'set'>, {frozenset(): set(), frozenset({'d1'}): {frozenset()}})
+data context =  [[{'d1'}]] For Cluster  C1
+Loading connecting point weights from file...(datacontext is used before)
+weights of edges of connecting points
+a =>2.5 3.5 
+b =>2.5 3.0 2.125 3.0 
+d =>3.5 3.0 3.0 0 0 0 
+c =>2.125 3.0 2.5 3.0 
+t =>3.0 3.0 
+i =>3.0 2.5 0 0 
+h =>0 0 0 3.0 3.0 
+s =>0 0 0 
+j =>0 0 
+g =>3.0 3.0 2.5 3.0 
+f =>2.5 0 0 0 
+k =>3.0 3.0 0 0 
+n =>0 0 0 0 
+l =>0 0 0 0 
+r =>0 0 0 
+m =>0 0 0 0 0 
+o =>0 0 0 
+p =>0 0 0 
+q =>0 0 
+e =>0 0 
+Updated CGL True defaultdict(<class 'set'>, {frozenset(): set(), frozenset({'d1'}): {frozenset()}})
+data Conetxt new one: [[{'d1'}]]
+CGL in CHECK defaultdict(<class 'set'>, {frozenset(): set(), frozenset({'d1'}): {frozenset()}})
+data context =  [[{'d1'}]] For Cluster  C3
+Loading connecting point weights from file...(datacontext is used before)
+weights of edges of connecting points
+a =>2.5 3.5 
+b =>2.5 3.0 2.3125 3.0 
+d =>3.5 3.0 3.0 0 0 0 
+c =>2.3125 3.0 2.5 3.0 
+t =>3.0 3.0 
+i =>3.0 2.5 0 0 
+h =>0 0 0 3.0 3.0 
+s =>0 0 0 
+j =>0 0 
+g =>3.0 3.0 2.5 3.0 
+f =>2.5 0 0 0 
+k =>3.0 3.0 0 0 
+n =>0 0 0 0 
+l =>0 0 0 0 
+r =>0 0 0 
+m =>0 0 0 0 0 
+o =>0 0 0 
+p =>0 0 0 
+q =>0 0 
+e =>0 0 
+Updated CGL True defaultdict(<class 'set'>, {frozenset(): set(), frozenset({'d1'}): {frozenset()}})
+data Conetxt new one: [[{'d1'}]]
+CGL in CHECK defaultdict(<class 'set'>, {frozenset(): set(), frozenset({'d1'}): {frozenset()}})
+data context =  [[{'d1'}]] For Cluster  C5
+Loading connecting point weights from file...(datacontext is used before)
+weights of edges of connecting points
+a =>2.5 3.5 
+b =>2.5 3.0 2.3125 3.0 
+d =>3.5 3.0 3.0 0 0 0 
+c =>2.3125 3.0 2.5 3.0 
+t =>3.0 3.0 
+i =>3.0 2.5 0 0 
+h =>0 0 0 3.0 3.0 
+s =>0 0 0 
+j =>0 0 
+g =>3.0 3.0 2.5 3.0 
+f =>2.5 0 0 0 
+k =>3.0 3.0 0 0 
+n =>0 0 0 0 
+l =>0 0 0 0 
+r =>0 0 0 
+m =>0 0 0 0 0 
+o =>0 0 0 
+p =>0 0 0 
+q =>0 0 
+e =>0 0 
+Updated CGL True defaultdict(<class 'set'>, {frozenset(): set(), frozenset({'d1'}): {frozenset()}})
+Points with intent :  h g 
+Path :  a -> b -> c -> g -> c
+Heuristic_cost :  10.8125
+--- 2.0887489318847656 milli-seconds taken to execute ---
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--Simulation Completed--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
